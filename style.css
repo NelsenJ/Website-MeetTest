@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+}
+
+header nav{
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5vh
+}
+
+header nav a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+header nav a:hover{
+    border-bottom: 3px solid black;
+    transition-delay: all 0.3s ease;
+}
+
+
+section.content{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section.content div.box{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding-top: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 2%;
+}
+
+section.content div.box div.text{
+    float: left;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+section.content div.box div.image{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.content div.box div.image img{
+    min-width: 90%;
+    min-height: 90%;
+    
+}
+
+section.content div.box aside.clear{
+    clear: both;
+}
+
+section.content div.box div.text div.top{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section.content div.box div.text div.top h1{
+    font-size: 35pt;
+}
+
+section.content div.box div.text div.top p{
+    font-size: 15pt;
+}
+
+section.content div.box div.text div.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15%;
+}
+
+section.content div.box div.text div.bottom p.tag{
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+section.content div.box div.text div.bottom div.logo{
+    font-size: 20pt;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
